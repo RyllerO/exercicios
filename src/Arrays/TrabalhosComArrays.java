@@ -1,26 +1,29 @@
 package Arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 /**
  * @author Ryller Oliveira
  */
 
-public class Arrays {
+public class TrabalhosComArrays {
     public static void main(String[] args) {
         Integer [] numeros = { 5, 9, 12, 3, 4, 60, 1, 2, 8, 17, 15, 7};
         int maior = 0;
         int menor = 0;
 
-        ArrayList<Integer> arrayList = new ArrayList<>();
-
-        arrayList.addAll(java.util.Arrays.asList( 5, 9, 12, 3, 4, 60, 1, 2, 8, 17, 15, 7));
+        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(5, 9, 12, 3, 4, 60, 1, 2, 8, 17, 15, 7));
 
         System.out.println("MAIOR ARRAY LIST: " + Collections.max(arrayList));
         System.out.println("MENOR ARRAY LIST: " + Collections.min(arrayList));
 
-        System.out.println(Collections.sort(arrayList));
+//        arrayList.sort((x,y) -> (x>y) ? 1 : ((x == y) ? 1 : -1));
+        Collections.sort(arrayList);
+        System.out.println("Ordenação ASC" + arrayList);
+        Collections.reverse(arrayList);
+        System.out.println("Ordenação DESC" + arrayList);
 
         //informar um numero e soma-lo a todos os seus anteriores//
         //informar um numero e soma-lo a todos os seus anteriores sem repetição//
