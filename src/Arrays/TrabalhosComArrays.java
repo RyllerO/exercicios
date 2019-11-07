@@ -10,9 +10,10 @@ import java.util.Collections;
 
 public class TrabalhosComArrays {
     public static void main(String[] args) {
-        Integer [] numeros = { 5, 9, 12, 3, 4, 60, 1, 2, 8, 17, 15, 7};
+        Integer[] numeros = {5, 9, 12, 3, 4, 60, 1, 2, 8, 17, 15, 7};
         int maior = 0;
         int menor = 0;
+        int aux = 0;
 
         ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(5, 9, 12, 3, 4, 60, 1, 2, 8, 17, 15, 7));
 
@@ -31,30 +32,35 @@ public class TrabalhosComArrays {
 
         //pegar menor valor do array//
         for (int i = 0; i < numeros.length; i++) {
-            int aux = numeros[i];
 
-            if (i==0) {
+            if (i == 0) {
                 maior = numeros[i];
                 menor = numeros[i];
             }
 
-            if (numeros[i]>maior) {
+            if (numeros[i] > maior) {
                 maior = numeros[i];
             }
 
-            if (numeros[i]<menor) {
+            if (numeros[i] < menor) {
                 menor = numeros[i];
             }
         }
 
         //ordenar valores do array em ordem crescente//
         for (int i = 0; i < numeros.length; i++) {
-
+            aux = numeros[i];
+            if (aux > numeros[i+1]) {
+                numeros[i] = numeros[i+1];
+                numeros[i+1] = aux;
+            }
         }
 
 
         System.out.println("Maior: " + maior);
         System.out.println("Menor: " + menor);
+
+        System.out.println("Sort feito 'na mão': " + Arrays.toString(numeros));
 
     }
 }
