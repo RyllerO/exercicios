@@ -26,7 +26,6 @@ public class TrabalhosComArrays {
         Collections.reverse(arrayList);
         System.out.println("Ordenação DESC" + arrayList);
 
-        //informar um numero e soma-lo a todos os seus anteriores//
         //informar um numero e soma-lo a todos os seus anteriores sem repetição//
         //informar um numero e soma-lo a todos os seus anteriores com recursividade//
 
@@ -49,12 +48,15 @@ public class TrabalhosComArrays {
 
         //ordenar valores do array em ordem crescente//
         for (int i = 0; i < numeros.length; i++) {
-            aux = numeros[i];
-            if (aux > numeros[i+1]) {
-                numeros[i] = numeros[i+1];
-                numeros[i+1] = aux;
+            for (int j = 0; j < numeros.length - 1; j++) {
+                if (numeros[j] > numeros[j + 1]) {
+                    aux = numeros[j];
+                    numeros[j] = numeros[j + 1];
+                    numeros[j + 1] = aux;
+                }
             }
         }
+
 
 
         System.out.println("Maior: " + maior);
@@ -62,5 +64,22 @@ public class TrabalhosComArrays {
 
         System.out.println("Sort feito 'na mão': " + Arrays.toString(numeros));
 
+        System.out.println("Soma de numeros anteriores na mão: " + somaNumerosAnteriores(7));
+
+        System.out.println("Soma de numeros anteriores recursivo na mão: " + somaNumerosAnterioresRecursivo(5));
+
+    }
+
+    //informar um numero e soma-lo a todos os seus anteriores//
+    private static int somaNumerosAnteriores(int valor) {
+        int soma = 0;
+        for (int i = valor; i > 0; i--) {
+            soma += i;
+        }
+        return soma;
+    }
+
+    private static int somaNumerosAnterioresRecursivo(int valor) {
+        return somaNumerosAnterioresRecursivo(valor - 1) + valor;
     }
 }
