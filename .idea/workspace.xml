@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="70ef8d85-37a4-40da-942b-1d90f7234fbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Arrays/HackerRankTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Arrays/No.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Arrays/Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Arrays/Trees.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Arrays/TrabalhosComArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays/TrabalhosComArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercicios/META-INF/exercicios.kotlin_module" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,22 +20,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Arrays/TrabalhosComArrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,6 +46,7 @@
     <option name="width" value="1382" />
     <option name="height" value="754" />
   </component>
+  <component name="ProjectId" id="1v2yCy8X20nwf7YxXmh2996ouIL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -63,27 +54,68 @@
     </navigator>
     <panes />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Arrays" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ArvoreBinariaApp">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArvoreBinariaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Arrays.ArvoreBinariaApp" />
+      <module name="exercicios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Arrays.Teste" />
+      <module name="exercicios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrabalhosComArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Arrays.TrabalhosComArrays" />
       <module name="exercicios" />
@@ -99,10 +131,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArvoreBinariaApp" />
+        <item itemvalue="Application.Teste" />
         <item itemvalue="Application.TrabalhosComArrays" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -118,6 +153,8 @@
       <workItem from="1572955621475" duration="5069000" />
       <workItem from="1573139167051" duration="5341000" />
       <workItem from="1573218351300" duration="5658000" />
+      <workItem from="1625774355870" duration="768000" />
+      <workItem from="1632407138766" duration="8235000" />
     </task>
     <servers />
   </component>
@@ -191,11 +228,15 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/numeros-romanos/NumerosRomanos.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Collections.java">
+    <entry file="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342">
           <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
