@@ -1,6 +1,9 @@
 package Arrays;
+
 import java.util.*;
 import java.io.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 class Node {
     Node left;
@@ -23,38 +26,83 @@ class Solution {
         Node right;
     */
     public static int height(Node root) {
-        if(root == null) {
+        if (root == null) {
             return -1;
         }
         return Math.max(height(root.left), height(root.right)) + 1;
     }
 
     public static Node insert(Node root, int data) {
-        if(root == null) {
+        if (root == null) {
             return new Node(data);
         } else {
-            Node cur;
-            if(data <= root.data) {
-                cur = insert(root.left, data);
-                root.left = cur;
+            if (data <= root.data) {
+                root.left = insert(root.left, data);
             } else {
-                cur = insert(root.right, data);
-                root.right = cur;
+                root.right = insert(root.right, data);
             }
             return root;
         }
     }
 
+    public static int altura(Node p) {
+        if (p != null) {
+            int he, hd;
+
+            he = altura(p.left);
+            hd = altura(p.right);
+
+            if (he > hd) {
+                return he + 1;
+            } else {
+                return hd + 1;
+            }
+        }
+
+        return 0;
+    }
+    public static void levelOrder(Node root) {
+        Queue<Node> q = new LinkedList<Node>();
+        q.add(root);
+
+        while (!q.isEmpty()){
+            Node n = q.remove();
+            if (n.left != null){
+                q.add(n.left);
+            }
+
+            if (n.right != null){
+                q.add(n.right);
+            }
+            System.out.print(n.data+" ");
+        }
+    }
+    
+    public static int arraySum(List<Integer> numbers) {
+        int sum = numbers.stream().mapToInt(integer -> integer).sum();
+        int sum2 = numbers.stream().reduce(0, (a, b) -> a + b);
+        int sum3 = numbers.stream().collect(Collectors.summingInt(Integer::intValue));
+
+        return sum;
+    }
+    
+    public static void fizzBuzz(Integer n) {
+        IntStream.rangeClosed(1, n)
+                .mapToObj(i -> i % 5 == 0 ? (i % 7 == 0 ? "FizzBuzz" : "Fizz") : (i % 7 == 0 ? "Buzz" : i))
+                .forEach(System.out::println);
+    }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int t = scan.nextInt();
+        int t = scan.nextInt(); //numero de nós que a arvore terá
         Node root = null;
-        while(t-- > 0) {
+        while (t-- > 0) { //repete até dar a quantidade total de numero de nós
             int data = scan.nextInt();
             root = insert(root, data);
         }
         scan.close();
-        int height = height(root);
-        System.out.println(height);
+//        int height = altura(root);
+//        System.out.println(height);
+        levelOrder(root);
     }
 }
